@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        // Global error guard to catch and suppress any unhandled fetch getter errors
+        window.addEventListener('error', function(event) {
+          if (event && event.message && event.message.indexOf('fetch') !== -1 && event.message.indexOf('getter') !== -1) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+
+        try {
+          var _f = window.fetch;
+          var defineWritableFetch = function(target) {
+            try {
+              Object.defineProperty(target, 'fetch', {
+                get: function() { return _f; },
+                set: function(val) { _f = val; },
+                configurable: true,
+                enumerable: true
+              });
+              return true;
+            } catch (err) {
+              return false;
+            }
+          };
+          if (!defineWritableFetch(window)) {
+            if (typeof Window !== 'undefined' && Window.prototype) {
+              defineWritableFetch(Window.prototype);
+            }
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <title>CloudCast - Multi-Stream Remote YouTube Broadcaster</title>
+    <meta name="description" content="Stream continuous 24/7 live video broadcasts to multiple YouTube channels and stream keys simultaneously from a remote cloud server." />
+    <meta property="og:title" content="CloudCast - Multi-Stream Remote YouTube Broadcaster" />
+    <meta property="og:description" content="Stream continuous 24/7 live video broadcasts to multiple YouTube channels and stream keys simultaneously from a remote cloud server." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

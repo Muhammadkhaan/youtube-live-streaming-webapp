@@ -1,0 +1,14 @@
+[
+  {
+    "id": "chan_1790927910798_y41el",
+    "title": "Test Live Channel",
+    "handle": "@testlive",
+    "streamKey": "abcd-1234-efgh-5678",
+    "rtmpUrl": "rtmps://a.rtmps.youtube.com:443/live2",
+    "avatarUrl": "",
+    "channelUrl": "",
+    "connectedAt": "2026-10-02T07:58:30.798Z",
+    "connectionType": "direct",
+    "isDefault": true
+  }
+]

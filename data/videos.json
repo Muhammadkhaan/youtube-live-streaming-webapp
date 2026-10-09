@@ -1,0 +1,38 @@
+[
+  {
+    "id": "vid_1790933920322_ykfikbx",
+    "filename": "1790933920073_YTDown.com_YouTube_Media_pO_N-phCDH4_Surah-Yasin-Yaseen-Full-With-Arabic-Text-Ep-00001-Sheikh-Abdul-Rahman-Al-Sudais_001_720p.mp4",
+    "displayName": "YTDown.com_YouTube_Media_pO_N-phCDH4_Surah-Yasin-Yaseen-Full-With-Arabic-Text-Ep-00001-Sheikh-Abdul-Rahman-Al-Sudais_001_720p.mp4",
+    "fileType": "video/mp4",
+    "sizeBytes": 20509480,
+    "sizeFormatted": "19.56 MB",
+    "createdAt": "2026-10-02T09:38:40.322Z",
+    "url": "/uploads/1790933920073_YTDown.com_YouTube_Media_pO_N-phCDH4_Surah-Yasin-Yaseen-Full-With-Arabic-Text-Ep-00001-Sheikh-Abdul-Rahman-Al-Sudais_001_720p.mp4",
+    "storagePath": "/app/applet/uploads/1790933920073_YTDown.com_YouTube_Media_pO_N-phCDH4_Surah-Yasin-Yaseen-Full-With-Arabic-Text-Ep-00001-Sheikh-Abdul-Rahman-Al-Sudais_001_720p.mp4",
+    "durationFormatted": "12:33",
+    "durationSeconds": 753.581,
+    "resolution": "1280x720",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "hasAudio": true,
+    "isLiveReady": true
+  },
+  {
+    "id": "vid_1790927890175_dbxkbv3",
+    "filename": "test_pattern_1790927878266.mp4",
+    "displayName": "Test Pattern Live Stream Video (30s 1080p)",
+    "fileType": "video/mp4",
+    "sizeBytes": 1704964,
+    "sizeFormatted": "1.63 MB",
+    "createdAt": "2026-10-02T07:58:10.175Z",
+    "url": "/uploads/test_pattern_1790927878266.mp4",
+    "storagePath": "/app/applet/uploads/test_pattern_1790927878266.mp4",
+    "durationFormatted": "0:30",
+    "durationSeconds": 30,
+    "resolution": "1920x1080",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "hasAudio": true,
+    "isLiveReady": true
+  }
+]
